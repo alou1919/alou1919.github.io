@@ -62,3 +62,8 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* 自定義 */
+.contact p{
+    text-align: center;
+}
