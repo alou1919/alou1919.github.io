@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>火器管制レーダー</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <style>
+        #pdf-container {
+            width: 100%;
+            height: 100vh;
+            overflow: auto;
+            text-align: center;
+        }
+        canvas {
+            border: 1px solid #000;
+        }
+        /* footerのスタイル */
+        #footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,11 +38,13 @@
         </nav>
     </header>
     <main>
-        <p>
-			少女執筆中...
-        </p>
+        <center>
+            少女執筆中...
+        </center>
     </main>
-    <div id="footer"></div>
-    <script src="load-footer.js" defer></script>
+    <footer>
+        &copy; <span id="copyright-year"></span> Alouette
+    </footer>
+    <script src="load-footer.js"></script>
 </body>
 </html>
