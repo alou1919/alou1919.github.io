@@ -7,6 +7,6 @@ document.addEventListener("DOMContentLoaded", function() {
   
 	if (copyrightElement) {
 	  // 指定したidの場所に現在の年を書き込み
-	  copyrightElement.textContent = currentYear;
+	  copyrightElement.textContent = "2024 - " + currentYear;
 	}
   });
